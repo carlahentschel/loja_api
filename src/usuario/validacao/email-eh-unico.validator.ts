@@ -11,6 +11,7 @@ import { Injectable } from '@nestjs/common';
 @ValidatorConstraint({ async: true })
 export class EmailEhUnicoValidator implements ValidatorConstraintInterface {
   constructor(private usuarioRepository: UsuarioRepository) {}
+
   async validate(
     value: any,
     /* validationArguments?: ValidationArguments, */
